@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: yuliam
+      POSTGRES_PASSWORD: yuliamp
+      POSTGRES_DB: nestdb
+    ports:
+    - 5499:5432
